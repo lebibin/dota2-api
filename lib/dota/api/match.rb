@@ -61,6 +61,10 @@ module Dota
         raw["cluster"]
       end
 
+      def region
+        CLUSTERS[raw["cluster"]]
+      end
+
       def drafts
         @drafts ||= (raw["picks_bans"] || []).map do |raw_draft|
           Draft.new(raw_draft)
