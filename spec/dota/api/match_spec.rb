@@ -81,4 +81,8 @@ RSpec.describe Dota::API::Match do
   specify "#cluster" do
     expect(match.cluster).to eq 135
   end
+
+  specify "#region" do
+    expect(match.region).to eq "Europe West"
+  end
 end

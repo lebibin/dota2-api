@@ -48,6 +48,44 @@ module Dota
         3 => "Very High"
       }.freeze
 
+      CLUSTERS = {
+        111 => "US West",
+        112 => "US West",
+        114 => "US West",
+        121 => "US East",
+        122 => "US East",
+        123 => "US East",
+        124 => "US East",
+        131 => "Europe West",
+        132 => "Europe West",
+        133 => "Europe West",
+        134 => "Europe West",
+        135 => "Europe West",
+        136 => "Europe West",
+        142 => "South Korea",
+        143 => "South Korea",
+        151 => "Southeast Asia",
+        152 => "Southeast Asia",
+        153 => "Southeast Asia",
+        161 => "China",
+        163 => "China",
+        171 => "Australia",
+        181 => "Russia",
+        182 => "Russia",
+        183 => "Russia",
+        184 => "Russia",
+        191 => "Europe East",
+        200 => "South America",
+        204 => "South America",
+        211 => "South Africa",
+        212 => "South Africa",
+        213 => "South Africa",
+        221 => "China ",
+        222 => "China",
+        223 => "China",
+        231 => "China"
+      }.freeze
+
       def id
         raw["match_id"]
       end
