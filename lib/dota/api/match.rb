@@ -33,6 +33,10 @@ module Dota
         Time.at(raw["start_time"])
       end
 
+      def ended_at
+        Time.at(raw["start_time"] + raw["duration"])
+      end
+
       def first_blood
         raw["first_blood_time"]
       end

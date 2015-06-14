@@ -50,6 +50,10 @@ RSpec.describe Dota::API::Match do
     expect(match.starts_at).to eq Time.at(1430252064)
   end
 
+  specify "#ended_at" do
+    expect(match.ended_at).to eq Time.at(1430252064 + match.duration)
+  end
+
   specify "#duration" do
     expect(match.duration).to eq 3198
   end
