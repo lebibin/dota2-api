@@ -22,6 +22,11 @@ module Dota
       def url
         raw["tournament_url"]
       end
+
+      def store_id
+        raw["itemdef"]
+      end
+
     end
   end
 end
